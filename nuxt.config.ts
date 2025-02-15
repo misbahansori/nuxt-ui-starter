@@ -7,4 +7,12 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+
+  modules: ["@nuxt/ui"],
+
+  css: ["~/assets/css/main.css"],
+
+  ui: {
+    prefix: "",
+  },
 });

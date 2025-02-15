@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const route = useRoute()
+const colorMode = useColorMode();
 </script>
 
 <template>
-  <div>
-    <h1>Nuxt Routing set up successfully!</h1>
-    <p>Current route: {{ route.path }}</p>
-    <a href="https://nuxt.com/docs/getting-started/routing" target="_blank">Learn more about Nuxt Routing</a>
-  </div>
+  <section>
+    <div class="max-w-5xl mx-auto px-4 py-20">
+      <Button icon="heroicons:user" loading variant="subtle"> Button </Button>
+
+      <Select v-model="colorMode.preference" :options="['light', 'dark']" />
+    </div>
+  </section>
 </template>
