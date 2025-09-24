@@ -4,5 +4,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@compodium/nuxt"],
+
+  css: ["~/assets/css/main.css"],
 });
